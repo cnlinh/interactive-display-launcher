@@ -1,0 +1,42 @@
+{
+	"project_info": {
+		"project_number": "621346307808",
+		"firebase_url": "https://id-announcements-bc8d0.firebaseio.com",
+		"project_id": "id-announcements-bc8d0",
+		"storage_bucket": "id-announcements-bc8d0.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:621346307808:android:2c30d5e182c6d7f3",
+				"android_client_info": {
+					"package_name": "com.example.leochris.launcher"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "621346307808-pgpg0jgcs7r8r9lfdcn83mrlumm864oj.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCkvfB-rIS9rbtmXcXFY6YmwSAqPlcK3bM"
+				}
+			],
+			"services": {
+				"analytics_service": {
+					"status": 1
+				},
+				"appinvite_service": {
+					"status": 1,
+					"other_platform_oauth_client": []
+				},
+				"ads_service": {
+					"status": 2
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

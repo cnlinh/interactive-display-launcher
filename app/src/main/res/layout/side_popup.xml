@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/side_popup_layout">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:background="#88444444"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Touch the screen and try it out"
+                android:textSize="25sp"/>
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="30sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/touch_symbol"/>
+        </LinearLayout>
+        <!-- Identical LinearLayouts for shadow effect -->
+        <LinearLayout
+            android:background="#ffffffff"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Touch the screen and try it out"
+                android:textSize="25sp"/>
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="30sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/touch_symbol"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

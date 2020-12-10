@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.leochris.launcher.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:id="@+id/root_view">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:stl_indicatorAlwaysInCenter="true"
+                app:stl_indicatorWithoutPadding="false"
+                app:stl_indicatorInFront="false"
+                app:stl_indicatorInterpolation="smart"
+                app:stl_indicatorGravity="center"
+                app:stl_indicatorColor="#80000000"
+                app:stl_indicatorThickness="44dp"
+                app:stl_indicatorWidth="auto"
+                app:stl_indicatorCornerRadius="20dp"
+                app:stl_overlineColor="#4D000000"
+                app:stl_overlineThickness="0dp"
+                app:stl_underlineColor="#4D000000"
+                app:stl_underlineThickness="0dp"
+                app:stl_dividerColor="#4D000000"
+                app:stl_dividerThickness="0dp"
+                app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                app:stl_defaultTabTextAllCaps="true"
+                app:stl_defaultTabTextColor="#fff"
+                app:stl_defaultTabTextSize="18sp"
+                app:stl_defaultTabTextHorizontalPadding="16dp"
+                app:stl_defaultTabTextMinWidth="0dp"
+                app:stl_distributeEvenly="false"
+                app:stl_clickable="true"
+                app:stl_titleOffset="24dp"
+                app:stl_drawDecorationAfterTab="false" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tabs"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:background="@color/cardview_dark_background">
+
+            <Button
+                android:id="@+id/view_all_apps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="35dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="View all Apps"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"
+                android:onClick="launchLauncher"
+                android:layout_weight="0"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingTop="30dp"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:layout_weight="5">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="NUS High AppVenture"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="28dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Showcasing a variety of Android Apps made by our students. View the featured apps or tap this button to view all the apps our students made."-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="20dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dp"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:text="View all Apps"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:onClick="launchLauncher"-->
+                <!--android:layout_weight="0"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment android:name="com.example.leochris.launcher.bustiming.BusTiming"
+        android:id="@+id/bustiming_fragment"
+        android:layout_margin="4dp"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_bus_timing" />
+
+</LinearLayout>

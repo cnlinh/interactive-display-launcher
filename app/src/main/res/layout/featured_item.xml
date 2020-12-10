@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="60dp">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/item_icon"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/item_label"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="daf ads fa fas fa fas adf af sf"/>
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:paddingTop="20dp"
+            android:textSize="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:scrollHorizontally="false"
+            android:lineSpacingExtra="10dp"
+            android:text="hasdilfjskldfjksdjf klddhksdfja das fasd fsdfasf adf asf"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
